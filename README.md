@@ -1,1 +1,1 @@
-A random picture of a product from Etsy is fetched and players guess its price. Single player mode is also supported. Close guesses give players the option of going to the item's Etsy listing.
+A random picture of a product from Etsy is fetched using the Etsy's RESP API and displayed using Flask. Then one or two players guess the price of the product. Close guesses give players the option of going to the item's Etsy listing. The project is not yet hosted anywhere and only works through localhost.
