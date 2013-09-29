@@ -1,0 +1,20 @@
+<head>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+	<h1> {{winner}} Wins!</h1>
+	<img src= {{ img_src }} > 
+	<h2>$ {{price}} is the real price <h2>
+	{% if buy %}
+	<form action="/buy" method="POST"> 
+		<input type="submit" name="replay" value="Buy it!">
+	</form>
+	{% endif %}
+	<form action="/replay" method='POST'> 
+		<input type="submit" name="replay" value="Play Again?">
+	</form>
+
+</body>
+
+
